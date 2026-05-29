@@ -1,0 +1,6 @@
+{
+  "name": "vulcano-ai",
+  "version": "1.0.0",
+  "description": "Vulcano AI chatbot powered by Google Gemini",
+  "engines": { "node": ">=18" }
+}
