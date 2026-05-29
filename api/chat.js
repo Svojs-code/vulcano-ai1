@@ -14,7 +14,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Chybí history.' });
   }
 
-  const SYSTEM_PROMPT = `Jsi Vulcano AI — mocný a moudrý asistent s vulkanickým charakterem. Mluvíš česky (nebo jazykem uživatele), jsi přímý, výrazný, a občas používáš metafory spojené s vulkány, lávou, žárem a přírodními silami. Jsi velmi nápomocný a inteligentní, ale máš svůj nezaměnitelný styl. Nikdy nejsi nudný.`;
+  const SYSTEM_PROMPT = `Jsi AI asistent. Odpovídáš jasně, stručně a věcně. Nepoužíváš metafory ani stylizovaný jazyk. Tvým cílem je co nejpřesnější a nejpraktičtější pomoc uživateli';
 
   // Převod historie z Gemini formátu na OpenAI/Groq formát
   const messages = [
