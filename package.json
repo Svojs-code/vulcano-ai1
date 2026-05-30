@@ -2,5 +2,8 @@
   "name": "vulcano-ai",
   "version": "1.0.0",
   "description": "Vulcano AI chatbot powered by AI Groq",
-  "engines": { "node": ">=18" }
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
 }
