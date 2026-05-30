@@ -40,7 +40,18 @@ export default async function handler(req, res) {
       })
     });
 
-    const data = await response.json();
+  const text = await response.text();
+console.log(text);
+
+let data;
+try {
+  data = JSON.parse(text);
+} catch {
+  return res.status(500).json({
+    error: 'Server vrátil neplatnou odpověď',
+    detail: text
+  });
+}
 
     if (data.error) {
       return res.status(400).json({ error: data.error.message });
